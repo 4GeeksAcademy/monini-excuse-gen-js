@@ -21,17 +21,17 @@ window.onload = function() {
     "en un concurso de disfraces de payasos"
   ];
 
-  let RandomWho = Math.floor(Math.random() * who.length);
-  let RandomAction = Math.floor(Math.random() * action.length);
-  let RandomWhat = Math.floor(Math.random() * what.length);
-  let RandomWhere = Math.floor(Math.random() * where.length);
+  let randomWho = Math.floor(Math.random() * who.length);
+  let randomAction = Math.floor(Math.random() * action.length);
+  let randomWhat = Math.floor(Math.random() * what.length);
+  let randomWhere = Math.floor(Math.random() * where.length);
 
   document.querySelector("#excuse").innerHTML =
-    who[RandomWho] +
+    who[randomWho] +
     " " +
-    action[RandomAction] +
+    action[randomAction] +
     " " +
-    what[RandomWhat] +
+    what[randomWhat] +
     " " +
-    where[RandomWhere];
+    where[randomWhere];
 };
